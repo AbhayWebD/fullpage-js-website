@@ -1,0 +1,122 @@
+header{
+    position: absolute;
+    padding: 2% 5%;
+    width: 100%;
+    z-index: 99;
+}
+.nav_header .navbar-nav .nav-item {
+    padding: 0;
+}
+.nav_header .navbar-nav {
+    align-items: center;
+}
+.nav_header .navbar-nav .nav-link {
+    font-size: 85%;
+    font-family: Lato;
+    font-weight: 400;
+    color: #fff;
+    padding: 0;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 1px;
+    padding: 11px 20px;
+    border-radius: 5px;
+}
+.nav_header .navbar-brand{
+    font-weight: 900;
+    font-family: Montserrat;
+    font-size: 140%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #fff;
+}
+/* .nav_header .navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: #3e9990;
+    border-radius: 100px;
+    transition: all .5s ease-in-out;
+  } */
+  .nav_header .navbar-nav .nav-link:hover{
+    background: #3e9990;
+    font-weight: 700;
+  }
+  .navbar-brand:focus, .navbar-brand:hover {
+    color: #3e9990;
+    }
+
+  @media (max-width: 991px){
+    .navbar-toggler-icon{
+        background-color: white;
+    }
+    button.navbar-toggler {
+        outline: 0;
+    }
+    .navbar-nav {
+        padding: 0;
+        width:100%;
+        display:flex;
+        height:100%;
+        justify-content:center;
+    }
+    .navbar-nav .nav-item{
+        text-align:center;
+        width:100%;
+        margin-bottom:20px;
+        position:relative;
+    }
+    .navbar-nav .nav-item .nav-link{
+        font-size:130%;
+        color:#fff;
+        padding:10px 0;
+    }
+    .navbar-toggler:focus, .navbar-toggler:hover {
+        outline: 0;
+    }
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 50px;
+        cursor:pointer;
+        height:9%;
+        display:flex !important;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width: 24%;
+        color:white;
+    }
+    #myNav.show{
+        left:0;
+        opacity:.98;
+    }
+    #myNav {
+        height: 100vh;
+        width: 100%;
+        position: fixed !important;
+        z-index: 1;
+        top: 0;
+        left: -30%;
+        background-color: rgba(0,0,0,0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        opacity:0;
+    }
+    .collapsing{
+        height:100vh !important;
+    }
+    }
+
+  @media (max-width:481px){
+    header {
+        padding: 1% 5%;
+    }
+    .nav_header .navbar-brand {
+        font-size: 92%;
+    }
+  }
